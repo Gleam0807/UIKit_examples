@@ -39,8 +39,15 @@ class ViewController: UIViewController {
         rightTextField.delegate = self
         resultListView.delegate = self
         
+        textViewSetUp()
+        
     }
     
+    func textViewSetUp() {
+        resultListView.showsVerticalScrollIndicator = true // 최초 1회만 쓰는 값 ex)백그라운드색상같은거
+        resultListView.isEditable = false
+        resultListView.isScrollEnabled = true
+    }
     
     //MARK: functions
     func calculate(op: Op) {
@@ -126,18 +133,15 @@ class ViewController: UIViewController {
 
 extension ViewController: UITextFieldDelegate, UITextViewDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        return !(textField.text!.count > 3)
+        return textField.text!.count <= 3
     }
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        textView.showsVerticalScrollIndicator = true
-        textView.isEditable = false
-        textView.isScrollEnabled = true
-        
-        if (text == "\n") {
+        if text == "\n" {
             textView.resignFirstResponder()
             return false
         }
+
         return true
     }
 }

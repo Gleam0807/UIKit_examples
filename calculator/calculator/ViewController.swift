@@ -51,16 +51,16 @@ class ViewController: UIViewController {
     
     //MARK: functions
     func calculate(op: Op) {
-        guard let lhsText = leftTextField.text, let lhsNumber = Int(lhsText) else {
+        guard let lhsText = leftTextField.text, let lhsNumber = Double(lhsText) else {
             resultLabel.text = ErrorText.leftIsNotNumber.rawValue
             return
         }
-        guard let rhsText = rightTextField.text, let rhsNumber = Int(rhsText) else {
+        guard let rhsText = rightTextField.text, let rhsNumber = Double(rhsText) else {
             resultLabel.text = ErrorText.rightIsNotNumber.rawValue
             return
         }
         
-        var result: Any = 0
+        var result: Double = 0
         
         switch op {
         case .plus:
@@ -75,11 +75,7 @@ class ViewController: UIViewController {
                 return
             }
             
-            if lhsNumber % rhsNumber == 0 {
-                result = lhsNumber / rhsNumber
-            } else {
-                result = round(Double(lhsNumber) / Double(rhsNumber) * 100) / 100
-            }
+            result = round(Double(lhsNumber) / Double(rhsNumber) * 100) / 100
         case .none:
             return
         }

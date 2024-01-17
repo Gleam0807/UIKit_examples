@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		327896A22B57E75A006B6FEB /* Practice3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327896A12B57E75A006B6FEB /* Practice3.storyboard */; };
+		327896A42B57E77A006B6FEB /* PracticeViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327896A32B57E77A006B6FEB /* PracticeViewController3.swift */; };
 		329C874D2B53F45F00E51476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329C874C2B53F45F00E51476 /* AppDelegate.swift */; };
 		329C874F2B53F45F00E51476 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329C874E2B53F45F00E51476 /* SceneDelegate.swift */; };
 		329C87512B53F45F00E51476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329C87502B53F45F00E51476 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		327896A12B57E75A006B6FEB /* Practice3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Practice3.storyboard; sourceTree = "<group>"; };
+		327896A32B57E77A006B6FEB /* PracticeViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController3.swift; sourceTree = "<group>"; };
 		329C87492B53F45F00E51476 /* viewUIpractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viewUIpractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		329C874C2B53F45F00E51476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		329C874E2B53F45F00E51476 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,11 +68,13 @@
 				329C874E2B53F45F00E51476 /* SceneDelegate.swift */,
 				329C87502B53F45F00E51476 /* ViewController.swift */,
 				329C87622B53F98400E51476 /* PracticeViewController2.swift */,
+				327896A32B57E77A006B6FEB /* PracticeViewController3.swift */,
 				329C87522B53F45F00E51476 /* Main.storyboard */,
 				329C87552B53F46100E51476 /* Assets.xcassets */,
 				329C87572B53F46100E51476 /* LaunchScreen.storyboard */,
 				329C875A2B53F46100E51476 /* Info.plist */,
 				329C87602B53F95900E51476 /* Practice2.storyboard */,
+				327896A12B57E75A006B6FEB /* Practice3.storyboard */,
 			);
 			path = viewUIpractice;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327896A22B57E75A006B6FEB /* Practice3.storyboard in Resources */,
 				329C87592B53F46100E51476 /* LaunchScreen.storyboard in Resources */,
 				329C87612B53F95900E51476 /* Practice2.storyboard in Resources */,
 				329C87562B53F46100E51476 /* Assets.xcassets in Resources */,
@@ -146,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				329C87632B53F98400E51476 /* PracticeViewController2.swift in Sources */,
+				327896A42B57E77A006B6FEB /* PracticeViewController3.swift in Sources */,
 				329C87512B53F45F00E51476 /* ViewController.swift in Sources */,
 				329C874D2B53F45F00E51476 /* AppDelegate.swift in Sources */,
 				329C874F2B53F45F00E51476 /* SceneDelegate.swift in Sources */,

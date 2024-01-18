@@ -22,7 +22,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSl-dd-22G">
                                         <rect key="frame" x="30" y="30" width="166.66666666666666" height="128"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYf-cH-j3Q">
+                                            <view contentMode="bottomRight" translatesAutoresizingMaskIntoConstraints="NO" id="YYf-cH-j3Q">
                                                 <rect key="frame" x="92.666666666666657" y="30" width="64" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                             </view>

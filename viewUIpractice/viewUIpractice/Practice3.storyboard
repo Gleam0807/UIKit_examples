@@ -19,35 +19,35 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyf-xx-aI0">
                                 <rect key="frame" x="30" y="89" width="333" height="333"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSl-dd-22G">
-                                        <rect key="frame" x="30" y="30" width="166.66666666666666" height="128"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySH-70-PUz">
+                                        <rect key="frame" x="10" y="10" width="166.66666666666666" height="166.66666666666666"/>
                                         <subviews>
-                                            <view contentMode="bottomRight" translatesAutoresizingMaskIntoConstraints="NO" id="YYf-cH-j3Q">
-                                                <rect key="frame" x="92.666666666666657" y="30" width="64" height="68"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nW8-Fn-aaM">
+                                                <rect key="frame" x="73.333333333333343" y="10" width="83.333333333333343" height="83.333333333333329"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <constraints>
-                                            <constraint firstItem="YYf-cH-j3Q" firstAttribute="centerY" secondItem="CSl-dd-22G" secondAttribute="centerY" id="28D-SV-zFP"/>
-                                            <constraint firstItem="YYf-cH-j3Q" firstAttribute="top" secondItem="CSl-dd-22G" secondAttribute="top" multiplier="10" constant="30" id="4Uk-bm-fgR"/>
-                                            <constraint firstAttribute="trailing" secondItem="YYf-cH-j3Q" secondAttribute="trailing" constant="10" id="Bwo-dz-7Xc"/>
-                                            <constraint firstItem="YYf-cH-j3Q" firstAttribute="width" secondItem="CSl-dd-22G" secondAttribute="height" multiplier="1:2" id="u9U-vm-V6S"/>
+                                            <constraint firstItem="nW8-Fn-aaM" firstAttribute="width" secondItem="ySH-70-PUz" secondAttribute="width" multiplier="0.5" id="0H3-wR-w8x"/>
+                                            <constraint firstAttribute="trailing" secondItem="nW8-Fn-aaM" secondAttribute="trailing" constant="10" id="Uxs-bf-jF4"/>
+                                            <constraint firstItem="nW8-Fn-aaM" firstAttribute="top" secondItem="ySH-70-PUz" secondAttribute="top" constant="10" id="iwl-de-QmV"/>
+                                            <constraint firstItem="nW8-Fn-aaM" firstAttribute="height" secondItem="ySH-70-PUz" secondAttribute="height" multiplier="0.5" id="jRa-zp-cJT"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
-                                    <constraint firstItem="CSl-dd-22G" firstAttribute="top" secondItem="cyf-xx-aI0" secondAttribute="top" constant="30" id="2GI-NO-pXg"/>
-                                    <constraint firstItem="CSl-dd-22G" firstAttribute="leading" secondItem="cyf-xx-aI0" secondAttribute="leading" constant="30" id="4cP-Qb-xt6"/>
-                                    <constraint firstItem="CSl-dd-22G" firstAttribute="height" secondItem="cyf-xx-aI0" secondAttribute="height" multiplier="0.384384" id="Eid-1V-Fts"/>
-                                    <constraint firstItem="CSl-dd-22G" firstAttribute="width" secondItem="cyf-xx-aI0" secondAttribute="height" multiplier="1:2" id="HYl-NL-m9A"/>
+                                    <constraint firstItem="ySH-70-PUz" firstAttribute="width" secondItem="cyf-xx-aI0" secondAttribute="width" multiplier="0.5" id="DJ2-dl-Qjx"/>
+                                    <constraint firstItem="ySH-70-PUz" firstAttribute="height" secondItem="cyf-xx-aI0" secondAttribute="height" multiplier="0.5" id="OCG-em-yx2"/>
+                                    <constraint firstItem="ySH-70-PUz" firstAttribute="leading" secondItem="cyf-xx-aI0" secondAttribute="leading" constant="10" id="SvF-4D-bGb"/>
                                     <constraint firstAttribute="width" secondItem="cyf-xx-aI0" secondAttribute="height" multiplier="1:1" id="YCc-ZO-ynT"/>
+                                    <constraint firstItem="ySH-70-PUz" firstAttribute="top" secondItem="cyf-xx-aI0" secondAttribute="top" constant="10" id="jUa-KV-TmO"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cyf-xx-aI0" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="4y5-0a-vRi"/>
                             <constraint firstItem="cyf-xx-aI0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="NbA-Rn-4z7"/>
@@ -62,14 +62,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

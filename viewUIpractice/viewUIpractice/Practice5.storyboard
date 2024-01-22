@@ -94,34 +94,31 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbs-TK-qmR">
-                                        <rect key="frame" x="136" y="293" width="61" height="34.333333333333314"/>
+                                        <rect key="frame" x="10" y="313" width="313" height="34.333333333333314"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K37-me-7YR">
-                                                <rect key="frame" x="0.0" y="0.0" width="61" height="34.333333333333336"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K37-me-7YR">
+                                                <rect key="frame" x="0.0" y="0.0" width="313" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="버튼1"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="K37-me-7YR" secondAttribute="trailing" constant="10" id="GDR-eD-YlQ"/>
-                                            <constraint firstItem="K37-me-7YR" firstAttribute="leading" secondItem="lbs-TK-qmR" secondAttribute="leading" constant="10" id="JZW-0y-X7d"/>
-                                            <constraint firstItem="K37-me-7YR" firstAttribute="centerX" secondItem="lbs-TK-qmR" secondAttribute="centerX" id="MJj-c2-85b"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
+                                    <constraint firstItem="lbs-TK-qmR" firstAttribute="centerX" secondItem="bbf-gM-DH7" secondAttribute="centerX" id="2vP-IW-cE1"/>
                                     <constraint firstItem="LNF-qz-N5D" firstAttribute="centerX" secondItem="vVJ-1k-Nuc" secondAttribute="centerX" id="6ez-FA-g2O"/>
                                     <constraint firstItem="LNF-qz-N5D" firstAttribute="leading" secondItem="vVJ-1k-Nuc" secondAttribute="leading" constant="10" id="MVg-J0-crE"/>
                                     <constraint firstItem="bbf-gM-DH7" firstAttribute="leading" secondItem="vVJ-1k-Nuc" secondAttribute="leading" constant="10" id="Pja-qM-RdC"/>
                                     <constraint firstAttribute="width" secondItem="vVJ-1k-Nuc" secondAttribute="height" multiplier="1:1.3" id="PyR-AS-deV"/>
+                                    <constraint firstAttribute="trailing" secondItem="lbs-TK-qmR" secondAttribute="trailing" constant="10" id="SS9-4b-gtY"/>
                                     <constraint firstAttribute="bottom" secondItem="bbf-gM-DH7" secondAttribute="bottom" constant="150" id="W8A-m7-uAz"/>
                                     <constraint firstItem="LNF-qz-N5D" firstAttribute="top" secondItem="vVJ-1k-Nuc" secondAttribute="top" constant="10" id="bjC-rY-OxS"/>
+                                    <constraint firstItem="lbs-TK-qmR" firstAttribute="leading" secondItem="vVJ-1k-Nuc" secondAttribute="leading" constant="10" id="cCh-pP-O67"/>
                                     <constraint firstItem="bbf-gM-DH7" firstAttribute="centerX" secondItem="vVJ-1k-Nuc" secondAttribute="centerX" id="kC4-cO-2Fu"/>
-                                    <constraint firstItem="lbs-TK-qmR" firstAttribute="top" secondItem="bbf-gM-DH7" secondAttribute="bottom" constant="10" id="ktr-qe-UwR"/>
-                                    <constraint firstItem="lbs-TK-qmR" firstAttribute="centerX" secondItem="bbf-gM-DH7" secondAttribute="centerX" id="lc7-cs-Yu7"/>
+                                    <constraint firstItem="lbs-TK-qmR" firstAttribute="top" secondItem="bbf-gM-DH7" secondAttribute="bottom" constant="30" id="ktr-qe-UwR"/>
                                     <constraint firstItem="LNF-qz-N5D" firstAttribute="height" secondItem="vVJ-1k-Nuc" secondAttribute="height" multiplier="0.5" id="nkS-6o-dtP"/>
                                 </constraints>
                             </view>

@@ -13,6 +13,8 @@
 		3201DF0B2B5D037C00DB4846 /* PracticeViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3201DF0A2B5D037C00DB4846 /* PracticeViewController5.swift */; };
 		324ECC072B593D7500BFA760 /* Practice4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324ECC062B593D7500BFA760 /* Practice4.storyboard */; };
 		324ECC092B593D8B00BFA760 /* PracticeViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324ECC082B593D8B00BFA760 /* PracticeViewController4.swift */; };
+		3277E5CD2B5FC06D00D65B60 /* Practice7.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3277E5CC2B5FC06D00D65B60 /* Practice7.storyboard */; };
+		3277E5CF2B5FC08500D65B60 /* PracticeViewController7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277E5CE2B5FC08500D65B60 /* PracticeViewController7.swift */; };
 		327896A22B57E75A006B6FEB /* Practice3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327896A12B57E75A006B6FEB /* Practice3.storyboard */; };
 		327896A42B57E77A006B6FEB /* PracticeViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327896A32B57E77A006B6FEB /* PracticeViewController3.swift */; };
 		329C874D2B53F45F00E51476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329C874C2B53F45F00E51476 /* AppDelegate.swift */; };
@@ -32,6 +34,8 @@
 		3201DF0A2B5D037C00DB4846 /* PracticeViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController5.swift; sourceTree = "<group>"; };
 		324ECC062B593D7500BFA760 /* Practice4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Practice4.storyboard; sourceTree = "<group>"; };
 		324ECC082B593D8B00BFA760 /* PracticeViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController4.swift; sourceTree = "<group>"; };
+		3277E5CC2B5FC06D00D65B60 /* Practice7.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Practice7.storyboard; sourceTree = SOURCE_ROOT; };
+		3277E5CE2B5FC08500D65B60 /* PracticeViewController7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController7.swift; sourceTree = "<group>"; };
 		327896A12B57E75A006B6FEB /* Practice3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Practice3.storyboard; sourceTree = "<group>"; };
 		327896A32B57E77A006B6FEB /* PracticeViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController3.swift; sourceTree = "<group>"; };
 		329C87492B53F45F00E51476 /* viewUIpractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viewUIpractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +88,7 @@
 				324ECC082B593D8B00BFA760 /* PracticeViewController4.swift */,
 				3201DF0A2B5D037C00DB4846 /* PracticeViewController5.swift */,
 				320108B82B5E7B0F00D2DE49 /* PracticeViewController6.swift */,
+				3277E5CE2B5FC08500D65B60 /* PracticeViewController7.swift */,
 				329C87522B53F45F00E51476 /* Main.storyboard */,
 				329C87552B53F46100E51476 /* Assets.xcassets */,
 				329C87572B53F46100E51476 /* LaunchScreen.storyboard */,
@@ -93,6 +98,7 @@
 				324ECC062B593D7500BFA760 /* Practice4.storyboard */,
 				3201DF082B5D035300DB4846 /* Practice5.storyboard */,
 				320108B62B5E7AFA00D2DE49 /* Practice6.storyboard */,
+				3277E5CC2B5FC06D00D65B60 /* Practice7.storyboard */,
 			);
 			path = viewUIpractice;
 			sourceTree = "<group>";
@@ -159,6 +165,7 @@
 				329C87592B53F46100E51476 /* LaunchScreen.storyboard in Resources */,
 				3201DF092B5D035300DB4846 /* Practice5.storyboard in Resources */,
 				329C87612B53F95900E51476 /* Practice2.storyboard in Resources */,
+				3277E5CD2B5FC06D00D65B60 /* Practice7.storyboard in Resources */,
 				320108B72B5E7AFA00D2DE49 /* Practice6.storyboard in Resources */,
 				329C87562B53F46100E51476 /* Assets.xcassets in Resources */,
 				324ECC072B593D7500BFA760 /* Practice4.storyboard in Resources */,
@@ -174,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				320108B92B5E7B0F00D2DE49 /* PracticeViewController6.swift in Sources */,
+				3277E5CF2B5FC08500D65B60 /* PracticeViewController7.swift in Sources */,
 				324ECC092B593D8B00BFA760 /* PracticeViewController4.swift in Sources */,
 				329C87632B53F98400E51476 /* PracticeViewController2.swift in Sources */,
 				327896A42B57E77A006B6FEB /* PracticeViewController3.swift in Sources */,

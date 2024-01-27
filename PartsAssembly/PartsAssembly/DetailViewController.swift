@@ -21,14 +21,20 @@ class DetailViewController: UIViewController {
     
     //MARK: properties
     var friend: Friend?
+    var isCloseButtonHidden: Bool = false
 
     //MARK: OUTLET
+    @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     
     override func viewDidLoad() {
-        print("friend: \(friend)")
+        self.navigationController?.navigationBar.tintColor = .black
+        
+        if isCloseButtonHidden {
+            closeButton.isHidden = true
+        }
         
         if let friend = friend {
             profileImageView.image = UIImage(named: friend.profileImageName)

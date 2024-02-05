@@ -18,35 +18,62 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    enum ViewType {
+        case my(profile: Friend)
+        case friend(index: Int)
+    }
+    
+    var viewType: ViewType = .friend(index: 0)
     
     //MARK: properties
-    var friend: Friend?
     var isCloseButtonHidden: Bool = false
 
     //MARK: OUTLET
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var statusTextField: UITextField!
     
     override func viewDidLoad() {
+        makeNavigationButton()
         self.navigationController?.navigationBar.tintColor = .black
         
         if isCloseButtonHidden {
             closeButton.isHidden = true
         }
         
-        if let friend = friend {
+        switch viewType {
+        case .my(let profile):
+            profileImageView.image = UIImage(named: profile.profileImageName)
+            nameTextField.text = profile.name
+            statusTextField.text = profile.status
+        case .friend(let index):
+            let friend = Friend.friendList[index];
             profileImageView.image = UIImage(named: friend.profileImageName)
-            nameLabel.text = friend.name
-            statusLabel.text = friend.status
-        }
-        else {
-            nameLabel.text = "(알 수 없음)"
-            statusLabel.text = "(알 수 없음)"
+            nameTextField.text = friend.name
+            statusTextField.text = friend.status
         }
     }
     
+    func makeNavigationButton() {
+        let rightNavigationBarButton = UIBarButtonItem(title: "저장", style: .plain ,target: self, action: #selector(saveAction))
+        self.navigationItem.rightBarButtonItem = rightNavigationBarButton
+    }
+
+    @objc func saveAction() {
+        switch viewType {
+        case .my(let profile):
+            saveStringToUserDefaults(key: "name", value: nameTextField.text ?? "")
+            saveStringToUserDefaults(key: "status", value: statusTextField.text ?? "")
+        case .friend(let index):
+            print("index: \(index)")
+        }
+        
+        func saveStringToUserDefaults(key: String, value: String) {
+            // 값 저장
+            UserDefaults.standard.setValue(value, forKey: key)
+        }
+    }
     
     @IBAction func closeButtonClieked(_ sender: UIButton) {
         self.dismiss(animated: true)

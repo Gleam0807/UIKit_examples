@@ -16,6 +16,7 @@ import UIKit
  */
 
 class ViewController: UIViewController  {
+    let friendList = Friend.friendList
 //    struct Friend {
 //        var name: [String] = ["송선우", "권석훈", "풍재근", "설태연", "풍희태", "조서은", "유유빈", "홍은재", "복원", "안남혁"]
 //        var status: [String] = ["내 인생을 바꾸는 사람은 자신입니다. 아무도 대신해줄 수 없어요."
@@ -32,19 +33,6 @@ class ViewController: UIViewController  {
     //MARK: properties
 //    let myProfile: Friend = Friend(name: "나", status: "인생은 가늘고 길게...", profileImageName: "10")
     
-    let friendList: [Friend] = [
-        Friend(name: "송선우", status: "내 인생을 바꾸는 사람은 자신입니다. 아무도 대신해줄 수 없어요.", profileImageName: "1"),
-        Friend(name: "권석훈", status: "지금 아니면 언제 하실 건가요?", profileImageName: "2"),
-        Friend(name: "풍재근", status: "과거에 연연하지 마세요", profileImageName: "3"),
-        Friend(name: "설태연", status: "", profileImageName: "4"),
-        Friend(name: "풍희태", status: "완벽한 인생을 원하지 않고 행복한 삶을 원합니다.", profileImageName: "5"),
-        Friend(name: "조서은", status: "땀 없인 달콤함도 없다.", profileImageName: "6"),
-        Friend(name: "유유빈", status: "", profileImageName: "7"),
-        Friend(name: "홍은재", status: "", profileImageName: "8"),
-        Friend(name: "복원", status: "부모님의 존재를 당연시하지 마세요.", profileImageName: "9"),
-        Friend(name: "안남혁", status: "완벽한 인생을 원하지 않고 행복한 삶을 원합니다.", profileImageName: "10")
-    ]
-    
     // MARK: OUTLET
     @IBOutlet weak var friendTableView: UITableView!
     
@@ -53,6 +41,14 @@ class ViewController: UIViewController  {
         
         friendTableView.dataSource = self
         friendTableView.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let savedName = fetchStringFromUserDefaults(key: "name")
+        let savedStatus = fetchStringFromUserDefaults(key: "status")
+        let savedProfileImageName = fetchStringFromUserDefaults(key: "profileImageName")
+        
+        friendTableView.reloadData()
     }
     
     //let friend = Friend()
@@ -158,16 +154,15 @@ extension ViewController: UITableViewDelegate {
             if let savedName = fetchStringFromUserDefaults(key: "name"),
                let savedStatus = fetchStringFromUserDefaults(key: "status"),
                let savedProfileImage = fetchStringFromUserDefaults(key: "profileImageName") {
-                let myProfile: Friend? = Friend(name: savedName, status: savedStatus, profileImageName: savedProfileImage)
+                let myProfile: Friend = Friend(name: savedName, status: savedStatus, profileImageName: savedProfileImage)
                 print("savedName: \(savedName)")
                 print("savedStatus: \(savedStatus)")
                 print("savedProfileImage: \(savedProfileImage)")
-                detailVC.friend = myProfile
+                detailVC.viewType = .my(profile: myProfile)
             }
             
         } else {
-            let selectedData = friendList[indexPath.row]
-            detailVC.friend = selectedData
+            detailVC.viewType = .friend(index: indexPath.row)
         }
         detailVC.isCloseButtonHidden = true
         

@@ -62,11 +62,16 @@ class DetailViewController: UIViewController {
 
     @objc func saveAction() {
         switch viewType {
-        case .my(let profile):
+        case .my(_):
             saveStringToUserDefaults(key: "name", value: nameTextField.text ?? "")
             saveStringToUserDefaults(key: "status", value: statusTextField.text ?? "")
         case .friend(let index):
-            print("index: \(index)")
+            let selectedFriend = Friend.friendList[index]
+            let updatedFriend = Friend(
+                name: nameTextField.text ?? "",
+                status: statusTextField.text ?? "",
+                profileImageName: selectedFriend.profileImageName)
+            Friend.friendList[index] = updatedFriend
         }
         
         func saveStringToUserDefaults(key: String, value: String) {

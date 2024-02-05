@@ -16,7 +16,6 @@ import UIKit
  */
 
 class ViewController: UIViewController  {
-    let friendList = Friend.friendList
 //    struct Friend {
 //        var name: [String] = ["송선우", "권석훈", "풍재근", "설태연", "풍희태", "조서은", "유유빈", "홍은재", "복원", "안남혁"]
 //        var status: [String] = ["내 인생을 바꾸는 사람은 자신입니다. 아무도 대신해줄 수 없어요."
@@ -44,10 +43,6 @@ class ViewController: UIViewController  {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        let savedName = fetchStringFromUserDefaults(key: "name")
-        let savedStatus = fetchStringFromUserDefaults(key: "status")
-        let savedProfileImageName = fetchStringFromUserDefaults(key: "profileImageName")
-        
         friendTableView.reloadData()
     }
     
@@ -96,7 +91,7 @@ extension ViewController: UITableViewDataSource {
         if section == 0 {
             return 1
         } else {
-            return friendList.count
+            return Friend.friendList.count
         }
     }
     
@@ -117,7 +112,7 @@ extension ViewController: UITableViewDataSource {
             cell.nameLabel.text = savedName ?? "(알 수 없음)"
             cell.statusLabel.text = savedStatus ?? "(알 수 없음)"
         } else {
-            let friend = friendList[indexPath.row]
+            let friend = Friend.friendList[indexPath.row]
             cell.profileImageView.image = UIImage(named: friend.profileImageName)
             cell.nameLabel.text = friend.name
             cell.statusLabel.text = friend.status
